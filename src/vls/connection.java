@@ -14,7 +14,7 @@ public class connection {
             con = DriverManager.getConnection("jdbc:sqlite:vls.db"); 
             System.out.println("Connection Successful");
         } catch (Exception e) {
-            System.out.println("Connection Failed: " + e);
+            System.out.println("Connection Failed: " + e.getMessage());
         }
         return con;
     }
